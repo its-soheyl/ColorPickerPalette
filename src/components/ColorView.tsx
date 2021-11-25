@@ -1,11 +1,5 @@
 import React, {FC} from 'react';
-import {
-  View,
-  StyleSheet,
-  TouchableOpacity,
-  ViewStyle,
-  FlexStyle,
-} from 'react-native';
+import {View, StyleSheet, TouchableOpacity, ViewStyle} from 'react-native';
 
 interface Props {
   color: string | undefined;
