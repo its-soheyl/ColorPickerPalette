@@ -1,4 +1,4 @@
-import React, {FC, useState, useEffect} from 'react';
+import React, {FC, useState} from 'react';
 import {View, StyleSheet} from 'react-native';
 import {getNineNew} from './data';
 
@@ -13,12 +13,7 @@ const Main: FC = () => {
   const removeColorHandler = () => {
     const index = colors.indexOf(colorCode);
     delete colors[index];
-    setColorCode('');
   };
-
-  useEffect(() => {
-    setColorCode;
-  }, []);
 
   return (
     <View style={styles.container}>
