@@ -1,13 +1,18 @@
 import React, {FC} from 'react';
 import {View, StyleSheet, TextInput} from 'react-native';
 
-const ColorPlaceHolder: FC = () => {
+interface Props {
+  value: string;
+}
+
+const ColorPlaceHolder: FC<Props> = ({value}) => {
   return (
     <View>
       <TextInput
         placeholderTextColor="#aaa"
         style={styles.placeHolder}
-        placeholder="Color"
+        placeholder="Hex Code"
+        value={value}
       />
     </View>
   );
@@ -18,10 +23,11 @@ const styles = StyleSheet.create({
     height: 50,
     margin: 30,
     marginTop: 60,
-    borderBottomWidth: 2,
+    borderBottomWidth: 1,
     borderBottomColor: '#ff6c37',
     padding: 10,
-    opacity: 0.5,
+    fontSize: 18,
+    color: '#292961',
   },
 });
 
